@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>hexo 的安装与基本使用</title>
+      <link href="posts/e239.html"/>
+      <url>posts/e239.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><p>[git](<a href="http://npm.taobao.org/mirrors/git-for-windows/">git-for-windows Mirror (taobao.org)</a>)</p><p>[node](<a href="https://nodejs.org/en/">Node.js (nodejs.org)</a>)</p><blockquote><p>测试： node -v   </p><p>​            npm -v</p></blockquote><p><img src="/C:/Users\cj\AppData\Roaming\Typora\typora-user-images\image-20210515164130797.png" alt="image-20210515164130797"></p><blockquote><p>测试： git</p></blockquote><p><img src="/img/hexo-git%E5%AE%89%E8%A3%85%E6%8F%90%E7%A4%BA.png" alt="hexo-git安装提示"></p><p>如果没问题就可以安装 <em>hexo</em> 了</p><p><img src="/C:/Users\cj\AppData\Roaming\Typora\typora-user-images\image-20210516212004719.png" alt="git安装成功2"></p><h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>用前面的npm 命令 </p><blockquote><p>npm install hexo-cli -g</p></blockquote><p>安装完成后就来创建我们自己的博客了！</p><h2 id="hexo-的基本命令和使用"><a href="#hexo-的基本命令和使用" class="headerlink" title="hexo 的基本命令和使用"></a>hexo 的基本命令和使用</h2><p>先创建一个文件夹</p><p>用cmd命令行进入到改目录</p><p>执行：</p><blockquote><p>hexo init</p></blockquote><p>成功之后可以在该目录下看到一下的文件</p><p>其中_config.yml 是我们待会要配置的 是一个很重要的文件</p><p>source –&gt; _posts  里存放这我们写的博客</p><p><img src="/C:/Users\cj\AppData\Roaming\Typora\typora-user-images\image-20210515164752117.png" alt="image-20210515164752117"></p><p>执行：</p><blockquote><p>hexo s    (start 的简写)</p></blockquote><p><img src="/C:/Users\cj\AppData\Roaming\Typora\typora-user-images\image-20210515165504518.png" alt="image-20210515165504518"></p><p>现在在我们本地就启动了，可以在浏览器里面输 localhost:4000 </p><p>新建一个博客：</p><blockquote><p>hexo n “文件名” (new 的简写)</p></blockquote><p>新建之后可以在source 里面找到新建的文件再到浏览器里就会有我们刚新建的文章</p><hr><h2 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h2><p>在这之前先在git上设置你的github邮箱和密码</p><p>安装好git后在桌面上右点Git Bash Here</p><p><img src="/C:/Users\cj\AppData\Roaming\Typora\typora-user-images\image-20210515170104318.png" alt="image-20210515170104318"></p><p>进入到git 的控制面板</p><p>执行：</p><blockquote><p>git config –global user.email “你的的邮箱名”</p><p>git config –global user.name “用户名”</p></blockquote><p>在github 上创建一个仓库</p><p>仓库名必须是 用户名.github.io </p><p>为什么是用户名.github.io 目前我也不知道</p><p>修改_config.yml </p><p>找到最后 </p><blockquote><p>type: git</p><p>repo : 你仓库的地址</p><p>branch: master</p><p>email: 和前面设置git 的email一致</p><p>name: 同上</p></blockquote><p>注意： 冒号后面要一个空格</p><p><img src="/C:/Users\cj\AppData\Roaming\Typora\typora-user-images\image-20210515171631366.png" alt="image-20210515171631366"></p><p>之后再回到cmd</p><p>输入</p><blockquote><p>npm install –save hexo-deployer-git</p></blockquote><p>用来安装和部署的插件</p><blockquote><p>hexo clean    </p></blockquote><p>清理下</p><blockquote><p>hexo g (generate )</p></blockquote><p>生成</p><blockquote><p>hexo d (deploye)</p></blockquote><p>推上去之后再github上就可以看到了，注意吧REMEDE.md  建起来</p><p>成功之后就可以在网页上输入仓库的地址就可以访问了</p><hr><h2 id="hexo-主题"><a href="#hexo-主题" class="headerlink" title="hexo 主题"></a>hexo 主题</h2><p>克隆github上的hexo 主题</p><p>git clone 具体地址 themes/主题名</p><p>修改_config.yml </p><p>找到 theme :</p><p>改为主题名</p><p>成功之后先在本地看下有没有生效</p><p>生效后再推上去</p><p>先清理 </p><blockquote><p>hexo clean</p></blockquote><p>再生成</p><blockquote><p>hexo g</p></blockquote><p>再装配上去</p><blockquote><p>hexo d</p></blockquote><p>到此基本使用就算完了，我会继续更新的</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>t1</title>
+      <link href="posts/d4e6.html"/>
+      <url>posts/d4e6.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test</title>
+      <link href="posts/63534.html"/>
+      <url>posts/63534.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇文章</title>
+      <link href="posts/62824.html"/>
+      <url>posts/62824.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="posts/16107.html"/>
+      <url>posts/16107.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
